@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ad Click Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Ad Click Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Age:</label><br>
+        <input type="number" step="any" name="age" required><br><br>
+
+        <label>Gender (0 = Female, 1 = Male):</label><br>
+        <input type="number" min="0" max="1" name="gender" required><br><br>
+
+        <label>Device Type (0=Mobile,1=Desktop,2=Tablet):</label><br>
+        <input type="number" min="0" max="2" name="device_type" required><br><br>
+
+        <label>Ad Position (0=Top,1=Side,2=Bottom):</label><br>
+        <input type="number" min="0" name="ad_position" required><br><br>
+
+        <label>Browsing History (number of past visits):</label><br>
+        <input type="number" step="any" name="browsing_history" required><br><br>
+
+        <label>Time of Day (0-23 hour):</label><br>
+        <input type="number" min="0" max="23" name="time_of_day" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction_text }}</p>
+    {% endif %}
+</body>
+</html>
