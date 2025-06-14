@@ -24,8 +24,7 @@ In online advertising, predicting whether a user will click an ad helps improve 
 ## 🚀 Technologies Used
 
 ### 🧪 Machine Learning
-- Logistic Regression
-- Support Vector Machine (SVM)
+
 - K-Nearest Neighbors (KNN)
 - GridSearchCV for Hyperparameter Tuning
 
@@ -40,20 +39,25 @@ In online advertising, predicting whether a user will click an ad helps improve 
 ---
 
 ## 📁 Project Structure
-
 ad-click-prediction/
 │
 ├── static/
-│ └── style.css # CSS for styling the web page
+│   └── style.css             - CSS styling
 │
 ├── templates/
-│ └── index.html # Frontend HTML template
+│   └── index.html            - HTML frontend
 │
-├── ad_model.pkl # Trained ML model (pickled)
-├── app.py # Flask web application
-├── model_training.py # Script to train & evaluate ML models
-├── ad_data.csv # Dataset
-└── README.md
+├── models/
+│   └── knn_model.pkl         - Trained KNN model
+│
+├── notebooks/
+│   └── knn_model.ipynb       - Jupyter notebook for model development
+│
+├── app.py                    - Flask app script
+├── ad_click_dataset.csv               - Dataset
+├── screenshot1.png           - Web UI screenshot
+├── screenshot2.png           - Prediction screenshot
+└── README.md                 - Project documentation
 
 
 ---
