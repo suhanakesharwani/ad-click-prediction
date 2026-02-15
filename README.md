@@ -60,7 +60,7 @@ ad-click-prediction/
 ├── screenshot1.png           # Web UI screenshot
 ├── screenshot2.png           # Prediction screenshot
 └── README.md                 # Project documentation
-
+```
 
 ---
 
