@@ -39,25 +39,27 @@ In online advertising, predicting whether a user will click an ad helps improve 
 ---
 
 ## 📁 Project Structure
+
+```text
 ad-click-prediction/
 │
 ├── static/
-│   └── style.css             - CSS styling
+│   └── style.css             # CSS styling
 │
 ├── templates/
-│   └── index.html            - HTML frontend
+│   └── index.html            # HTML frontend
 │
 ├── models/
-│   └── knn_model.pkl         - Trained KNN model
+│   └── knn_model.pkl         # Trained KNN model
 │
 ├── notebooks/
-│   └── knn_model.ipynb       - Jupyter notebook for model development
+│   └── knn_model.ipynb       # Jupyter notebook for model development
 │
-├── app.py                    - Flask app script
-├── ad_click_dataset.csv               - Dataset
-├── screenshot1.png           - Web UI screenshot
-├── screenshot2.png           - Prediction screenshot
-└── README.md                 - Project documentation
+├── app.py                    # Flask app script
+├── ad_click_dataset.csv      # Dataset
+├── screenshot1.png           # Web UI screenshot
+├── screenshot2.png           # Prediction screenshot
+└── README.md                 # Project documentation
 
 
 ---
